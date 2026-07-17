@@ -1,0 +1,23 @@
+../../Middlewares/ST/AI/Misc/Inc/ai_device_adaptor.h:657:22:port_io_get	3
+../../Middlewares/ST/AI/Misc/Inc/ai_device_adaptor.h:672:22:port_io_write	1
+../../Middlewares/ST/AI/Misc/Inc/ai_device_adaptor.h:681:22:port_io_read	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:149:6:ioRawGetUint8	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:261:6:ioRawWriteBuffer	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:266:6:ioRawReadBuffer	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:271:6:ioRawDisableLLWrite	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:284:5:_write	6
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:382:7:uint64ToDecimal	3
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:395:6:uint32_to_str	4
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:419:13:_put_c_driver	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:434:6:lc_print	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:448:13:_put_c_buffer_cb	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:458:8:lc_vsnprint	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:484:7:__wrap_malloc	6
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:524:6:__wrap_free	4
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:579:6:stackMonInit	4
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:625:5:dwtCyclesToTime	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:642:7:dwtCyclesToFloatMs	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:650:20:devIdToStr	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:774:6:getSysConf	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:831:10:getFlashCacheConf	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Misc/Src/aiTestUtility.c:969:6:systemSettingLog	1

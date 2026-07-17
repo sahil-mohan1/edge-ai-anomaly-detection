@@ -1,0 +1,12 @@
+../../Middlewares/ST/AI/Misc/Inc/aiTestUtility.h:321:22:cyclesCounterInit	1
+../../Middlewares/ST/AI/Misc/Inc/aiTestUtility.h:357:22:cyclesCounterStart	1
+../../Middlewares/ST/AI/Misc/Inc/aiTestUtility.h:374:26:cyclesCounterEnd	2
+C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/AI/App/app_x-cube-ai.c:114:5:aiInit	1
+C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/AI/App/app_x-cube-ai.c:150:5:aiDeinit	1
+C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/AI/App/app_x-cube-ai.c:165:18:aiRun	2
+C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/AI/App/app_x-cube-ai.c:206:5:acquire_and_process_data	1
+C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/AI/App/app_x-cube-ai.c:220:5:post_process	1
+C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/AI/App/app_x-cube-ai.c:239:6:main_loop	1
+C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/AI/App/app_x-cube-ai.c:258:6:STM32CubeAI_Studio_AI_Init	1
+C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/AI/App/app_x-cube-ai.c:266:6:STM32CubeAI_Studio_AI_Process	1
+C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/AI/App/app_x-cube-ai.c:271:6:STM32CubeAI_Studio_AI_Deinit	1

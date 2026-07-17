@@ -1,0 +1,13 @@
+../../Middlewares/ST/AI/Misc/Inc/aiTestUtility.h:321:22:cyclesCounterInit	1
+../../Middlewares/ST/AI/Misc/Inc/aiTestUtility.h:357:22:cyclesCounterStart	1
+../../Middlewares/ST/AI/Misc/Inc/aiTestUtility.h:374:26:cyclesCounterEnd	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/AI/App/app_x-cube-ai.c:121:5:aiInit	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/AI/App/app_x-cube-ai.c:158:5:aiDeinit	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/AI/App/app_x-cube-ai.c:174:18:aiRun	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/AI/App/app_x-cube-ai.c:214:5:acquire_and_process_data	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/AI/App/app_x-cube-ai.c:221:5:post_process	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/AI/App/app_x-cube-ai.c:233:6:read_line	11
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/AI/App/app_x-cube-ai.c:266:6:main_loop	25
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/AI/App/app_x-cube-ai.c:439:6:STM32CubeAI_Studio_AI_Init	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/AI/App/app_x-cube-ai.c:448:6:STM32CubeAI_Studio_AI_Process	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/AI/App/app_x-cube-ai.c:453:6:STM32CubeAI_Studio_AI_Deinit	1

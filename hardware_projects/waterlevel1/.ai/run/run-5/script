@@ -1,0 +1,15 @@
+config load "C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-5\run-5.ioc"
+project toolchain "STM32CubeIDE"
+
+project toolchain "STM32CubeIDE"
+set mode RCC HSE-TCXO
+config save
+set gpio parameters PC0 GPIO_PuPd GPIO_PULLUP
+set pin PC0 LPUART1_RX
+set pin PC1 LPUART1_TX
+set mode LPUART1 Asynchronous
+config save
+set ip parameters LPUART1 BaudRate 115200
+set gpio parameters PC0 GPIO_PuPd GPIO_PULLUP
+project set heapsize 0x800
+project set stacksize 0x2000

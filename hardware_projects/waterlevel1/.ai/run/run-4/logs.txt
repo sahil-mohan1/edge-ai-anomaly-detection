@@ -1,0 +1,395 @@
+Generate Project
+Copying previous project files from C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4 to C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\generate\backup
+Calculating memory footprint...
+Generating project for board undefined...
+Executing process: C:\Users\sahil\AppData\Local\Programs\STM32CubeMX\jre\bin\java.exe -jar C:\Users\sahil\AppData\Local\Programs\STM32CubeMX\STM32CubeMX.exe -q -s
+Executed command: config load "C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\run-4.ioc"
+Executed command: project toolchain "STM32CubeIDE"
+Executed command: set mode RCC HSE-TCXO
+Executed command: config save
+Command not executed or already applied: set gpio parameters PC0 GPIO_PuPd GPIO_PULLUP, error: Error: Command failed: set gpio parameters PC0 GPIO_PuPd GPIO_PULLUP
+Executed command: set pin PC0 LPUART1_RX
+Executed command: set pin PC1 LPUART1_TX
+Executed command: set mode LPUART1 Asynchronous
+Executed command: config save
+Executed command: set ip parameters LPUART1 BaudRate 115200
+Executed command: set gpio parameters PC0 GPIO_PuPd GPIO_PULLUP
+Executed command: project set heapsize 0x800
+Executed command: project set stacksize 0x2000
+C:\Users\sahil\STM32Cube\Repository\STM32Cube_FW_WL_V1.5.0 already exists... Skipping installation...
+Generate project and exit.
+ If stuck here, please check STM32CubeMX opened dialog or Firmware Package.
+Executed command: config save
+Executed command: project toolchainlocation "."
+Executed command: project generate
+Adjusting memory area RAM for pool SRAM perfect match of 65536 bytes
+Generating code...
+>>> C:\ST\STEdgeAI\4.0\Utilities\windows\stedgeai.exe generate --model C:\Users\sahil\Desktop\ICFOSS\Anomaly Detection\models\saved\large_ar_mlp.tflite --batch-size 10 --mode target --optimization time --name network --verbosity 1 --c-api st-ai --target stm32wl --workspace C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_ws --output C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output --memory-pool C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\mempools.json
+ST Edge AI Core v4.0.1-20581 7ed50de05
+
+Creating c (debug) info json file C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output\network_c_info.json
+
+ Exec/report summary (generate)
+ -----------------------------------------------------------------------------------------------------------------
+ model file         :   C:\Users\sahil\Desktop\ICFOSS\Anomaly Detection\models\saved\large_ar_mlp.tflite          
+ type               :   tflite                                                                                    
+ c_name             :   network                                                                                   
+ compression        :   lossless                                                                                  
+ options            :   allocate-inputs, allocate-outputs, multi-heaps, use-lite-runtime, use-st-ai               
+ optimization       :   time                                                                                      
+ target/series      :   stm32wl                                                                                   
+ memory pool        :   C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\mempools.json   
+ workspace dir      :   C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_ws        
+ output dir         :   C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output    
+ model_fmt          :   float                                                                                     
+ model_name         :   large_ar_mlp                                                                              
+ model_hash         :   0x968248df27fcbf0daa0954501331a5b3                                                        
+ params #           :   7,682 items (30.01 KiB)                                                                   
+ -----------------------------------------------------------------------------------------------------------------
+ input 1/1          :   'serving_default_features0', f32(1x23), 92 Bytes, activations                             
+ output 1/1         :   'concat_9', f32(1x2), 8 Bytes, activations                                                
+ macc               :   7,900                                                                                     
+ weights (ro)       :   30,728 B (30.01 KiB) (1 segment)                                                          
+ activations (rw)   :   476 B (476 B) (1 segment) *                                                               
+ ram (total)        :   476 B (476 B) = 476 + 0 + 0                                                               
+ -----------------------------------------------------------------------------------------------------------------
+ (*) 'input'/'output' buffers are allocated in the activations buffer
+  Memory-pools summary (activations/ domain)
+  --------------- ---- ------------------------ --------- 
+  name            id   used                     buffer#   
+  --------------- ---- ------------------------ --------- 
+  SRAM            0    476 B (0.7%)             16        
+  weights_array   1    30.01 KiB (3072800.0%)   14        
+  --------------- ---- ------------------------ ---------
+
+Computing AI RT data/code size (target=stm32wl)..
+
+ Requested memory size by section - "stm32wl" target
+ ------------------------------ ------- -------- ------ -----
+
+ module                            text   rodata   data   bss
+ ------------------------------ ------- -------- ------ -----
+ NetworkRuntime1201_CM4_GCC.a     4,636        0      0     0
+ network.o                        1,962      117    568    16
+ lib (toolchain)*                 2,276       24      0     0
+
+ ------------------------------ ------- -------- ------ -----
+ RT total**                       8,874      141    568    16
+ ------------------------------ ------- -------- ------ -----
+ weights                              0   30,728      0     0
+
+ activations                          0        0      0   476
+ states                               0        0      0     0
+ io                                   0        0      0     0
+ ------------------------------ ------- -------- ------ -----
+
+ TOTAL                            8,874   30,869    568   492
+ ------------------------------ ------- -------- ------ -----
+ *  toolchain objects (libm/libgcc*)
+ ** RT AI runtime objects (kernels+infrastructure)
+
+  Summary - "stm32wl" target
+  ---------------------------------------------------
+               FLASH (ro)      %*   RAM (rw)       %
+
+  ---------------------------------------------------
+  RT total          9,583   23.8%        584   55.1%
+  ---------------------------------------------------
+  TOTAL            40,311              1,060
+
+  ---------------------------------------------------
+  *  rt/total
+
+ Generated files (5)
+ ----------------------------------------------------------------------------------------------------------
+ C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output\network_data.h
+
+ C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output\network_data.c
+ C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output\network.h
+ C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output\network.c
+ C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output\network_details.h
+
+Creating txt report file C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output\network_generate_report.txt
+
+elapsed time (GENERATE): 4.859s
+
+Compiling template bsp_ai.h.hbs...
+Compiling template app_config.h.hbs...
+Compiling template user_init.h.hbs...
+Compiling template user_init.c.hbs...
+Compiling template app_x-cube-ai.h.hbs...
+Compiling template app_x-cube-ai.c.hbs...
+Compiling template weights.h.hbs...
+Compiling template weights.c.hbs...
+Removing USART Init from main.c
+Removing static from USART Init in main.c
+Adding include line #include "app_x-cube-ai.h" to main.c
+Adding init function call STM32CubeAI_Studio_AI_Init(); to main.c
+Adding process function call STM32CubeAI_Studio_AI_Process(); to main.c
+Generate project done
+Create.
+
+Opening 'run-4'.
+
+16:33:11 **** Build of configuration Release for project run-4 ****
+
+make -j16 all 
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Middlewares/ST/AI/Validation/Src/aiPbIO.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/AI/Validation/Src/aiPbIO.d" -MT"Middlewares/ST/AI/Validation/Src/aiPbIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/AI/Validation/Src/aiPbIO.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Middlewares/ST/AI/Validation/Src/aiPbMemRWServices.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/AI/Validation/Src/aiPbMemRWServices.d" -MT"Middlewares/ST/AI/Validation/Src/aiPbMemRWServices.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/AI/Validation/Src/aiPbMemRWServices.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Middlewares/ST/AI/Validation/Src/aiPbMgr.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/AI/Validation/Src/aiPbMgr.d" -MT"Middlewares/ST/AI/Validation/Src/aiPbMgr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/AI/Validation/Src/aiPbMgr.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.d" -MT"Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Middlewares/ST/AI/Validation/Src/pb_common.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/AI/Validation/Src/pb_common.d" -MT"Middlewares/ST/AI/Validation/Src/pb_common.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/AI/Validation/Src/pb_common.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Middlewares/ST/AI/Validation/Src/pb_decode.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/AI/Validation/Src/pb_decode.d" -MT"Middlewares/ST/AI/Validation/Src/pb_decode.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/AI/Validation/Src/pb_decode.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Middlewares/ST/AI/Validation/Src/pb_encode.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/AI/Validation/Src/pb_encode.d" -MT"Middlewares/ST/AI/Validation/Src/pb_encode.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/AI/Validation/Src/pb_encode.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Middlewares/ST/AI/Validation/Src/stm32msg.pb.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/AI/Validation/Src/stm32msg.pb.d" -MT"Middlewares/ST/AI/Validation/Src/stm32msg.pb.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/AI/Validation/Src/stm32msg.pb.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Middlewares/ST/AI/Misc/Src/aiTestHelper_ST_AI.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/AI/Misc/Src/aiTestHelper_ST_AI.d" -MT"Middlewares/ST/AI/Misc/Src/aiTestHelper_ST_AI.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/AI/Misc/Src/aiTestHelper_ST_AI.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Middlewares/ST/AI/Misc/Src/aiTestUtility.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/AI/Misc/Src/aiTestUtility.d" -MT"Middlewares/ST/AI/Misc/Src/aiTestUtility.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/AI/Misc/Src/aiTestUtility.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Middlewares/ST/AI/Misc/Src/ai_device_adaptor.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/AI/Misc/Src/ai_device_adaptor.d" -MT"Middlewares/ST/AI/Misc/Src/ai_device_adaptor.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/AI/Misc/Src/ai_device_adaptor.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Middlewares/ST/AI/Misc/Src/lc_print.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/AI/Misc/Src/lc_print.d" -MT"Middlewares/ST/AI/Misc/Src/lc_print.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/AI/Misc/Src/lc_print.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Middlewares/ST/AI/Misc/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/AI/Misc/Src/syscalls.d" -MT"Middlewares/ST/AI/Misc/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/AI/Misc/Src/syscalls.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_cortex.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_cortex.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_dma.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_dma.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_dma_ex.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_dma_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_dma_ex.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_exti.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_exti.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_flash.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_flash.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_flash_ex.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_flash_ex.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_gpio.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_gpio.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_pwr.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_pwr.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_pwr_ex.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_pwr_ex.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_rcc.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_rcc.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_rcc_ex.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_rcc_ex.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_uart.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_uart.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_uart_ex.d" -MT"Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_uart_ex.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Core/Src/system_stm32wlxx.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/CMSIS/system_stm32wlxx.d" -MT"Drivers/CMSIS/system_stm32wlxx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/CMSIS/system_stm32wlxx.o"
+
+arm-none-eabi-gcc -mcpu=cortex-m4 -c -x assembler-with-cpp -MMD -MP -MF"Application/User/Startup/startup_stm32wle5jcix.d" -MT"Application/User/Startup/startup_stm32wle5jcix.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Application/User/Startup/startup_stm32wle5jcix.o" "../Application/User/Startup/startup_stm32wle5jcix.s"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/Core/main.d" -MT"Application/User/Core/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Application/User/Core/main.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Core/Src/stm32wlxx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/Core/stm32wlxx_hal_msp.d" -MT"Application/User/Core/stm32wlxx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Application/User/Core/stm32wlxx_hal_msp.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/Core/Src/stm32wlxx_it.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/Core/stm32wlxx_it.d" -MT"Application/User/Core/stm32wlxx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Application/User/Core/stm32wlxx_it.o"
+
+arm-none-eabi-gcc "../Application/User/Core/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/Core/syscalls.d" -MT"Application/User/Core/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Application/User/Core/syscalls.o"
+
+arm-none-eabi-gcc "../Application/User/Core/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/Core/sysmem.d" -MT"Application/User/Core/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Application/User/Core/sysmem.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/AI/App/app_x-cube-ai.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"AI/App/app_x-cube-ai.d" -MT"AI/App/app_x-cube-ai.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "AI/App/app_x-cube-ai.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/AI/App/network.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"AI/App/network.d" -MT"AI/App/network.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "AI/App/network.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/AI/App/network_data.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"AI/App/network_data.d" -MT"AI/App/network_data.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "AI/App/network_data.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/AI/App/network_weights.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"AI/App/network_weights.d" -MT"AI/App/network_weights.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "AI/App/network_weights.o"
+
+arm-none-eabi-gcc "C:/Users/sahil/.stm32cubeaistudio/workspace/waterlevel1/.ai/run/run-4/AI/App/user_init.c" -mcpu=cortex-m4 -std=gnu11 -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -DHAVE_NETWORK_INFO -c -I../../Core/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc -I../../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/AI/Inc -I../../Middlewares/ST/AI/Misc/Inc -I../../Middlewares/ST/AI/Validation/Inc -I../../Middlewares/ST/AI/Misc/Src -I../../Middlewares/ST/AI/Validation/Src -I../../AI/App -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"AI/App/user_init.d" -MT"AI/App/user_init.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "AI/App/user_init.o"
+
+arm-none-eabi-gcc -o "run-4.elf" @"objects.list"  -l:NetworkRuntime1201_CM4_GCC.a -mcpu=cortex-m4 -T"C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\STM32CubeIDE\STM32WLE5JCIX_FLASH.ld" --specs=nosys.specs -Wl,-Map="run-4.map" -Wl,--gc-sections -static -L../../Middlewares/ST/AI/Lib/NetworkRuntime1201_CM4_GCC.a --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+
+Finished building target: run-4.elf
+
+arm-none-eabi-size  run-4.elf 
+
+arm-none-eabi-objdump -h -S run-4.elf  > "run-4.list"
+
+   text	   data	    bss	    dec	    hex	filename
+
+  70140	    936	  12492	  83568	  14670	run-4.elf
+
+Finished building: default.size.stdout
+
+Finished building: run-4.list
+
+
+16:33:15 Build Finished. 0 errors, 0 warnings. (took 4s.351ms)
+
+
+      -------------------------------------------------------------------
+
+                       STM32CubeProgrammer v2.22.0                  
+      -------------------------------------------------------------------
+
+
+ST-LINK SN  : 0045002E3438510D34313939
+ST-LINK FW  : V3J16M9B5S1
+
+Board       : STLINK-V3SET
+Voltage     : 0.00V
+
+SWD freq    : 8000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+
+Device ID   : 0x497
+
+Revision ID : Rev Y
+
+Device name : STM32WLxx
+
+NVM size  : 256 KBytes
+Device type : MCU
+Device CPU  : Cortex-M4
+BL Version  : 0xC4
+
+
+
+Opening and parsing file: run-4.elf
+
+
+
+Memory Programming ...
+  File          : run-4.elf
+
+  Size          : 69.41 KB 
+  Address       : 0x08000000
+
+
+
+Erasing memory corresponding to segment 0:
+
+Erasing internal memory sectors [0 34]
+
+Download in Progress:
+
+
+
+File download complete
+
+Time elapsed during download operation: 00:00:01.826
+
+
+RUNNING Program ... 
+  Address:      : 0x8000000
+
+Application is running, Please Hold on...
+Start operation achieved successfully
+
+Flashing completed
+>>> C:\ST\STEdgeAI\4.0\Utilities\windows\stedgeai.exe validate --model C:\Users\sahil\Desktop\ICFOSS\Anomaly Detection\models\saved\large_ar_mlp.tflite --batch-size 10 --mode target --optimization time --name network --verbosity 1 --c-api st-ai --target stm32wl --workspace C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_ws --output C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output --memory-pool C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\mempools.json --desc serial:COM8:115200 --save-csv
+ST Edge AI Core v4.0.1-20581 7ed50de05
+
+Setting validation data...
+
+ generating random data, size=10, seed=42, range=(0, 1)
+
+   I[1]: (10, 1, 1, 23)/float32, min/max=[0.005062, 0.986887], mean/std=[0.481987, 0.293204]
+ no output/reference samples are provided
+
+Creating c (debug) info json file C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output\network_c_info_valid.json
+
+ Exec/report summary (validate)
+ -----------------------------------------------------------------------------------------------------------------
+ model file         :   C:\Users\sahil\Desktop\ICFOSS\Anomaly Detection\models\saved\large_ar_mlp.tflite          
+ type               :   tflite                                                                                    
+ c_name             :   network                                                                                   
+ compression        :   lossless                                                                                  
+ options            :   allocate-inputs, allocate-outputs, multi-heaps, use-lite-runtime, use-st-ai               
+ optimization       :   time                                                                                      
+ target/series      :   stm32wl                                                                                   
+ memory pool        :   C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\mempools.json   
+ workspace dir      :   C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_ws        
+ output dir         :   C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output    
+ model_fmt          :   float                                                                                     
+ model_name         :   large_ar_mlp                                                                              
+ model_hash         :   0x968248df27fcbf0daa0954501331a5b3                                                        
+ params #           :   7,682 items (30.01 KiB)                                                                   
+ -----------------------------------------------------------------------------------------------------------------
+ input 1/1          :   'serving_default_features0', f32(1x23), 92 Bytes, activations                             
+ output 1/1         :   'concat_9', f32(1x2), 8 Bytes, activations                                                
+ macc               :   7,900                                                                                     
+ weights (ro)       :   30,728 B (30.01 KiB) (1 segment)                                                          
+ activations (rw)   :   476 B (476 B) (1 segment) *                                                               
+ ram (total)        :   476 B (476 B) = 476 + 0 + 0                                                               
+ -----------------------------------------------------------------------------------------------------------------
+ (*) 'input'/'output' buffers are allocated in the activations buffer
+  Memory-pools summary (activations/ domain)
+  --------------- ---- ------------------------ --------- 
+  name            id   used                     buffer#   
+  --------------- ---- ------------------------ --------- 
+  SRAM            0    476 B (0.7%)             16        
+  weights_array   1    30.01 KiB (3072800.0%)   14        
+  --------------- ---- ------------------------ ---------
+
+Running the TFlite model...
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Running the ST.AI c-model (AI RUNNER)...(name=network, mode=TARGET)
+
+E200(ValidationError): TARGET: Unable to bind the ST.AI runtime with "network" c-model: []
+ E801(HwIOError): Invalid firmware - COM8:115200
+
+Run failed: Error: validate error: E200(ValidationError): TARGET: Unable to bind the ST.AI runtime with "network" c-model. Please check the report for more details. Output: ST Edge AI Core v4.0.1-20581 7ed50de05
+PASS:   0%|          | 0/187 [00:00<?, ?it/s]                                                        Setting validation data...
+ generating random data, size=10, seed=42, range=(0, 1)
+   I[1]: (10, 1, 1, 23)/float32, min/max=[0.005062, 0.986887], mean/std=[0.481987, 0.293204]
+ no output/reference samples are provided
+                                                        Creating c (debug) info json file C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output\network_c_info_valid.json
+                                                         Exec/report summary (validate)
+ -----------------------------------------------------------------------------------------------------------------
+ model file         :   C:\Users\sahil\Desktop\ICFOSS\Anomaly Detection\models\saved\large_ar_mlp.tflite          
+ type               :   tflite                                                                                    
+ c_name             :   network                                                                                   
+ compression        :   lossless                                                                                  
+ options            :   allocate-inputs, allocate-outputs, multi-heaps, use-lite-runtime, use-st-ai               
+ optimization       :   time                                                                                      
+ target/series      :   stm32wl                                                                                   
+ memory pool        :   C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\mempools.json   
+ workspace dir      :   C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_ws        
+ output dir         :   C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\.ai\run\run-4\.ai\st_ai_output    
+ model_fmt          :   float                                                                                     
+ model_name         :   large_ar_mlp                                                                              
+ model_hash         :   0x968248df27fcbf0daa0954501331a5b3                                                        
+ params #           :   7,682 items (30.01 KiB)                                                                   
+ -----------------------------------------------------------------------------------------------------------------
+ input 1/1          :   'serving_default_features0', f32(1x23), 92 Bytes, activations                             
+ output 1/1         :   'concat_9', f32(1x2), 8 Bytes, activations                                                
+ macc               :   7,900                                                                                     
+ weights (ro)       :   30,728 B (30.01 KiB) (1 segment)                                                          
+ activations (rw)   :   476 B (476 B) (1 segment) *                                                               
+ ram (total)        :   476 B (476 B) = 476 + 0 + 0                                                               
+ -----------------------------------------------------------------------------------------------------------------
+ (*) 'input'/'output' buffers are allocated in the activations buffer
+  Memory-pools summary (activations/ domain)
+  --------------- ---- ------------------------ --------- 
+  name            id   used                     buffer#   
+  --------------- ---- ------------------------ --------- 
+  SRAM            0    476 B (0.7%)             16        
+  weights_array   1    30.01 KiB (3072800.0%)   14        
+  --------------- ---- ------------------------ ---------
+                                                        Running the TFlite model...
+                                                        Running the ST.AI c-model (AI RUNNER)...(name=network, mode=TARGET)
+                                                        
+E200(ValidationError): TARGET: Unable to bind the ST.AI runtime with "network" c-model: []
+ E801(HwIOError): Invalid firmware - COM8:115200
+ INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+

@@ -1,0 +1,8 @@
+config load "C:\Users\sahil\.stm32cubeaistudio\workspace\waterlevel1\waterlevel1.ioc"
+project toolchain "STM32CubeIDE"
+
+project toolchain "STM32CubeIDE"
+set mode RCC HSE-TCXO
+config save
+project set heapsize 0x800
+project set stacksize 0x2000

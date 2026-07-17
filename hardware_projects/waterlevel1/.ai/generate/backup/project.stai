@@ -1,0 +1,15 @@
+{
+  "toolchain": "STM32CubeIDE",
+  "variant": "ApplicationTemplate",
+  "fromMx": false,
+  "isGenerated": true,
+  "name": "waterlevel1",
+  "createdAt": 1782888876320,
+  "lastModified": 1783149692479,
+  "lastAccessed": 1783149692479,
+  "path": "C:\\Users\\sahil\\.stm32cubeaistudio\\workspace",
+  "board": "",
+  "mcu": "STM32WLE5JCI6TR",
+  "type": "BYOM",
+  "lastGenerationRunId": "run-1"
+}

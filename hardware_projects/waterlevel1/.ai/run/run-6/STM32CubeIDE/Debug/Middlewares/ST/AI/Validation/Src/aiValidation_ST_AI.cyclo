@@ -1,0 +1,31 @@
+../../Middlewares/ST/AI/Misc/Inc/aiTestUtility.h:152:20:_mon_alloc_reset	1
+../../Middlewares/ST/AI/Misc/Inc/aiTestUtility.h:321:22:cyclesCounterInit	1
+../../Middlewares/ST/AI/Misc/Inc/aiTestUtility.h:357:22:cyclesCounterStart	1
+../../Middlewares/ST/AI/Misc/Inc/aiTestUtility.h:374:26:cyclesCounterEnd	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:132:15:_get_tensor_size	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:140:13:_is_32b_packed	3
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:148:15:_get_tensor_element_size	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:157:15:_get_tensor_size_bytes	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:166:17:_stai_shape_to_n_dims	4
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:180:17:_stai_version_to_uint32	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:204:13:fill_tensor_desc_msg	4
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:240:13:encode_ai_buffer_to_tensor_desc	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:251:17:_stai_compiler_id_to	7
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:274:13:send_model_info	5
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:360:13:_receive_ai_data	10
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:406:13:_send_ai_io_tensor	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:461:6:_print_debug	5
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:494:13:_stai_event_cb	10
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:580:17:adjustInferenceTime	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:597:36:aiExecCtx	10
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:623:12:aiBootstrap	11
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:727:12:aiInit	5
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:758:13:aiDeInit	4
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:783:13:aiPbCmdSysInfo	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:815:13:aiPbCmdNNInfo	2
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:830:13:_set_context	3
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:853:13:_reset_states	4
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:864:13:aiPbCmdNNRun	20
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:1027:5:aiValidationInit	1
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:1040:5:aiValidationProcess	3
+C:/Users/sahil/Desktop/ICFOSS/Anomaly Detection/hardware_projects/waterlevel1/.ai/run/run-6/Middlewares/ST/AI/Validation/Src/aiValidation_ST_AI.c:1078:6:aiValidationDeInit	1

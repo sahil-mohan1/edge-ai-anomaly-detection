@@ -1,0 +1,25 @@
+{
+  "memory": {
+    "mempools": [
+      {
+        "name": "SRAM",
+        "prop": {
+          "throughput": "HIGH",
+          "latency": "LOW"
+        },
+        "usable_size": {
+          "value": "65536",
+          "magnitude": "BYTES"
+        },
+        "size": {
+          "value": "65536",
+          "magnitude": "BYTES"
+        },
+        "offset": {
+          "value": "0x20000000",
+          "magnitude": "BYTES"
+        }
+      }
+    ]
+  }
+}

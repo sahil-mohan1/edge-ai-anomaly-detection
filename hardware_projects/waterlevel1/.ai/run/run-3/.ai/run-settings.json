@@ -1,0 +1,30 @@
+{
+  "args": {
+    "model": "C:\\Users\\sahil\\Desktop\\ICFOSS\\Anomaly Detection\\models\\saved\\large_ar_mlp.tflite",
+    "valinput": "",
+    "valoutput": "",
+    "batch-size": 10,
+    "mode": "target",
+    "optimization": "time",
+    "name": "network",
+    "verbosity": 1,
+    "c-api": "st-ai",
+    "target": "stm32wl",
+    "workspace": "C:\\Users\\sahil\\.stm32cubeaistudio\\workspace\\waterlevel1\\.ai\\run\\run-3\\.ai\\st_ai_ws",
+    "output": "C:\\Users\\sahil\\.stm32cubeaistudio\\workspace\\waterlevel1\\.ai\\run\\run-3\\.ai\\st_ai_output",
+    "memory-pool": "C:\\Users\\sahil\\.stm32cubeaistudio\\workspace\\waterlevel1\\.ai\\run\\run-3\\.ai\\mempools.json"
+  },
+  "mempools": [
+    {
+      "name": "SRAM",
+      "size": 65536,
+      "offset": 536870912,
+      "driver": "SRAM",
+      "max": 65536,
+      "mode_available": []
+    }
+  ],
+  "exportWeightsAsBin": false,
+  "copyWeightsToRam": false,
+  "automaticFlash": true
+}

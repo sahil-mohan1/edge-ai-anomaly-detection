@@ -1,0 +1,19 @@
+{
+  "saved_at": "2026-06-18T05:01:33.457083+00:00",
+  "last_timestamp": "2026-05-26T16:59:00",
+  "rows_processed": 8779,
+  "anomalies_corrected": 739,
+  "correction_rate_pct": 8.42,
+  "breakdown": {
+    "ec1_abort": 449,
+    "ec2_timeout": 0,
+    "ec3_spike": 6,
+    "ec4_limit_fault": 0,
+    "ec4_limit_real": 0,
+    "ec5_unstable_bad": 284,
+    "ec5_unstable_ok": 520
+  },
+  "snarimax_trained": true,
+  "arfr_samples_seen": 8040,
+  "model_file": "C:\\Users\\sahil\\Desktop\\ICFOSS\\Anomaly Detection\\models\\saved\\hybrid_corrector.pkl"
+}

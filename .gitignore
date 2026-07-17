@@ -1,0 +1,184 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.installed.cfg
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.eggs/
+lib/
+lib64/
+*.so
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ============================================================
+# Jupyter Notebooks
+# ============================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ============================================================
+# ML / Model artifacts  (keep only tracked model files)
+# ============================================================
+# Uncomment the lines below if you do NOT want to track trained models:
+# models/saved/*.keras
+# models/saved/*.tflite
+# models/saved/*.h5
+# models/saved/*.pt
+# models/saved/*.pth
+# models/archive/
+
+# ============================================================
+# Hardware projects
+# ============================================================
+hardware_projects/waterlevel1/      # old project, not needed
+# hardware_projects/E5_hlk_RLS/ is tracked
+
+# ============================================================
+# Data files
+# ============================================================
+
+# Unnamed raw dump copies (junk)
+data/raw/-data-12_09_43 - Copy.csv
+data/raw/-data-12_19_49 - Copy.csv
+
+# Obsolete / unused raw datasets
+data/raw/data-jan15-jan22.csv
+data/raw/data-may26-june18.csv
+
+# Processed versions of unused datasets
+data/processed/data-jan15-jan22_processed.csv
+data/processed/data-may26-june18_processed.csv
+
+# Generated outage CSVs — reproducible from tracked scripts
+data/processed/*_outage.csv
+data/processed/test_generated_outage.csv
+
+# Large binary model/array formats — still tracked via models/saved/
+*.parquet
+*.feather
+
+# ============================================================
+# Large output / log files
+# ============================================================
+*.log
+stm32output.txt
+stm32serialoutput.txt
+cnn_model_raw_output.txt
+c_model_raw_output.txtcd
+
+# ============================================================
+# AI agent scripts & outputs
+# (scripts written by AI to generate/update docx, fix docs,
+#  run implementation plans, etc. — not part of the project)
+# ============================================================
+
+# Scratch analysis / one-off helper scripts
+scratch/
+
+# docx generation & update scripts
+update_docx_from_md.py
+safe_update.py
+update_v3.py
+update_v4.py
+fix.py
+
+# Patch / result / log output files produced by those scripts
+*_result.txt
+update_result.txt
+fix_result.txt
+fix2_result.txt
+final_verify.txt
+verify.txt
+docx_content.txt
+docx_full_content.txt
+docx_tables.txt
+week45.txt
+
+# AI-generated implementation plans (tracked in the agent brain, not the repo)
+docs/archive/implementation_plan.md
+
+# Other loose utility / test scripts not part of the core pipeline
+preprocess_and_check.py
+test_jun8.py
+test_lockout.py
+
+# ============================================================
+# Plots / generated images & HTML reports
+# (keep the directory but ignore generated output)
+# ============================================================
+plots/**/*.png
+plots/**/*.jpg
+plots/**/*.html
+plots/archive/
+plots/task5/
+plots/task6/
+# screenshots/ is intentionally tracked — referenced by docs markdown files
+
+# ============================================================
+# Office / Word temporary files
+# ============================================================
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp
+
+# ============================================================
+# Reports / large binary docs  (optional — comment out to track)
+# ============================================================
+*.docx
+*.pdf
+
+# ============================================================
+# OS & editor junk
+# ============================================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains / PyCharm
+.idea/
+*.iml
+
+# ============================================================
+# Environment / secrets
+# ============================================================
+.env
+.env.*
+*.env
+secrets.yaml
+secrets.json
+config/local_settings.py

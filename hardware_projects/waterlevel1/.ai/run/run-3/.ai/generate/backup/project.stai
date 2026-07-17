@@ -1,0 +1,20 @@
+{
+  "toolchain": "STM32CubeIDE",
+  "variant": "Validation",
+  "fromMx": false,
+  "isGenerated": false,
+  "name": "run-3",
+  "createdAt": 1782888876320,
+  "lastModified": 1783162462659,
+  "lastAccessed": 1783162462658,
+  "path": "C:\\Users\\sahil\\.stm32cubeaistudio\\workspace\\waterlevel1",
+  "mcu": "STM32WLE5JCI6TR",
+  "type": "BYOM",
+  "lastGenerationRunId": "run-1",
+  "uartInstance": {
+    "rxpin": "PB7",
+    "txpin": "PB6",
+    "usart": "USART1",
+    "baudrate": 115200
+  }
+}
