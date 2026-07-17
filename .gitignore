@@ -43,38 +43,45 @@ venv.bak/
 # ML / Model artifacts  (keep only tracked model files)
 # ============================================================
 # Uncomment the lines below if you do NOT want to track trained models:
-# models/saved/*.keras
-# models/saved/*.tflite
-# models/saved/*.h5
-# models/saved/*.pt
-# models/saved/*.pth
-# models/archive/
+# ml/models/saved/*.keras
+# ml/models/saved/*.tflite
+# ml/models/saved/*.h5
+# ml/models/saved/*.pt
+# ml/models/saved/*.pth
+# ml/models/archive/
 
 # ============================================================
-# Hardware projects
+# Firmware — STM32CubeIDE build artifacts
 # ============================================================
-hardware_projects/waterlevel1/      # old project, not needed
-# hardware_projects/E5_hlk_RLS/ is tracked
+firmware/E5_hlk_RLS/STM32CubeIDE/Debug/
+firmware/E5_hlk_RLS/STM32CubeIDE/Release/
+firmware/E5_hlk_RLS/**/*.o
+firmware/E5_hlk_RLS/**/*.d
+firmware/E5_hlk_RLS/**/*.su
+firmware/E5_hlk_RLS/**/*.cyclo
+firmware/E5_hlk_RLS/**/*.elf
+firmware/E5_hlk_RLS/**/*.map
+firmware/E5_hlk_RLS/**/*.list
 
 # ============================================================
 # Data files
 # ============================================================
 
 # Unnamed raw dump copies (junk)
-data/raw/-data-12_09_43 - Copy.csv
-data/raw/-data-12_19_49 - Copy.csv
+ml/data/raw/-data-12_09_43 - Copy.csv
+ml/data/raw/-data-12_19_49 - Copy.csv
 
 # Obsolete / unused raw datasets
-data/raw/data-jan15-jan22.csv
-data/raw/data-may26-june18.csv
+ml/data/raw/data-jan15-jan22.csv
+ml/data/raw/data-may26-june18.csv
 
 # Processed versions of unused datasets
-data/processed/data-jan15-jan22_processed.csv
-data/processed/data-may26-june18_processed.csv
+ml/data/processed/data-jan15-jan22_processed.csv
+ml/data/processed/data-may26-june18_processed.csv
 
 # Generated outage CSVs — reproducible from tracked scripts
-data/processed/*_outage.csv
-data/processed/test_generated_outage.csv
+ml/data/processed/*_outage.csv
+ml/data/processed/test_generated_outage.csv
 
 # Large binary model/array formats — still tracked via models/saved/
 *.parquet
@@ -129,12 +136,12 @@ test_lockout.py
 # Plots / generated images & HTML reports
 # (keep the directory but ignore generated output)
 # ============================================================
-plots/**/*.png
-plots/**/*.jpg
-plots/**/*.html
-plots/archive/
-plots/task5/
-plots/task6/
+ml/plots/**/*.png
+ml/plots/**/*.jpg
+ml/plots/**/*.html
+ml/plots/archive/
+ml/plots/task5/
+ml/plots/task6/
 # screenshots/ is intentionally tracked — referenced by docs markdown files
 
 # ============================================================
