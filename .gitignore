@@ -196,3 +196,4 @@ config/local_settings.py
 *.jpeg
 *.gif
 *.csv
+*.npz
