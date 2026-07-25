@@ -1,55 +1,30 @@
-# Anomaly Detection & Correction Pipeline
+# Edge AI Anomaly Detection
 
-This project implements a hybrid anomaly detection and correction pipeline using SNARIMAX and Adaptive Random Forest Regressor (ARFR) models to clean water level sensor data.
+This repository contains the complete end-to-end project for a **smart water-level anomaly detection node**. The system is built for the **STM32WLE5 (LoRa-E5)** platform and leverages a custom **Autoregressive Multi-Layer Perceptron (AR-MLP)** to detect, classify, and reconstruct anomalous sensor readings in real-time on the edge before transmitting over LoRaWAN.
 
-## Project Structure
+## Repository Structure
 
-The project directory has been organized cleanly into the following structure:
+This is a monorepo that contains both the machine learning experimentation environment and the embedded firmware implementation:
 
-- **`data/`**
-  - **`raw/`**: Raw CSV files directly from the sensor (e.g., `-data-12_09_43 - Copy.csv`).
-  - **`processed/`**: Generated and processed datasets, including:
-    - `combined_data.csv`: Merged sensor and error code records.
-    - `normal_data.csv` / `abnormal_data.csv`: Data split by error code status.
-    - `filtered_data.csv`: Data filtered using basic rejection rules (ground truth).
-    - `corrected_data.csv`: Cleaned output from the SNARIMAX+ARFR pipeline.
-- **`docs/`**: PDFs and Markdown reports detailing sensor behavior, analysis, and deliverables.
-- **`models/`**: Source code for models, features, config parameters, and saving/loading utilities.
-  - `saved/`: Model pickle files and metadata checkpoints.
-- **`plots/`**: Output plots from the pipeline and filters.
-  - `task5/`: Comparative filter test results (EMA, Hampel, Kalman, etc.).
-- **`scripts/`**: Preprocessing, gap analysis, filtering, and plotting helper scripts.
-- **`run_pipeline.py`**: The main execution script (pipeline entry point).
+### 1. `ml/` (Python ML Pipeline)
+Contains the Python-based data processing, model training, and evaluation scripts.
+* Includes scripts to build datasets from raw sensor logs.
+* Trains the dual-branch AR-MLP and CNN models.
+* Generates C-compatible headers (weights and test harnesses) for deployment.
+* See [ml/README.md](ml/README.md) for full details.
 
-## Getting Started
+### 2. `firmware/` (Embedded C Firmware)
+Contains the embedded edge AI firmware for the LoRa-E5 module.
+* Deploys the trained models using **STMicroelectronics X-CUBE-AI**.
+* Reads distance data from the HLK radar level sensor.
+* Runs the AR-MLP model dynamically to filter out physical glitches and simulated outages.
+* Encodes the cleaned data and transmits it securely via the LoRaWAN MAC stack.
+* See [firmware/README.md](firmware/README.md) for full details.
 
-### 1. Combine Raw Datasets
-Merge the raw sensor readings and error logs into a combined file:
-```bash
-python scripts/combine_data.py
-```
+### 3. `docs/` (Project Documentation)
+Contains project reports, feasibility studies, testing logs, and payload formats spanning the development cycles.
 
-### 2. Run Gap Analysis
-Assess the time gaps and missing records in the merged data:
-```bash
-python scripts/analyze_gaps.py
-```
+## Quick Start
 
-### 3. Generate Anomaly Plots
-Visualize raw readings vs. sensor error codes:
-```bash
-python scripts/plot_filtered_anomalies.py
-```
-
-### 4. Test Different Statistical Filters
-Evaluate different filters (Moving Average, Median, EMA, Hampel, Kalman) against the ground truth:
-```bash
-python scripts/filters/task5_filter_testing.py
-```
-
-### 5. Run the Hybrid Pipeline
-Execute the full correction pipeline:
-```bash
-python run_pipeline.py
-```
-Use `--no-plot` to run headlessly, or `--retrain` to discard saved models and retrain from scratch.
+* If you are looking to retrain the neural network or generate new test data, head to the **[ml/ directory](ml/README.md)**.
+* If you are looking to build the C firmware and flash the STM32 microcontroller, head to the **[firmware/ directory](firmware/README.md)**.
