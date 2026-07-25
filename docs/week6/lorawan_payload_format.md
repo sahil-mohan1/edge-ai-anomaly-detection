@@ -11,13 +11,12 @@ The binary format is tightly packed to minimize airtime and power consumption. I
 3. **Battery Voltage** (1 byte): The battery level of the edge device (divided by 10 for transmission).
 4. **Distance Logs** (Variable, up to 32 bytes): Historical distance data points to help reconstruct recent trends leading up to an anomaly.
 
-## 2. Payload Visualizations
 
 Below are screenshots demonstrating the payload format layout and structure:
 
-![Payload Format 1](../../screenshots/pl_format_1.png)
 
-![Payload Format 2](../../screenshots/pl_format_2.png)
+
+
 
 ---
 

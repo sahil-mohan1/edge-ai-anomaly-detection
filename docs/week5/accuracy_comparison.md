@@ -43,6 +43,5 @@ Because anomaly classification is often firmly governed by physical boundary rul
 
 The Large AR-MLP achieves the lowest errors (RMSE and MAE) during prolonged simulated outages compared to the other architectures.
 
-## Visual Performance Comparison
 
-![Anomaly Detection Comparison](../plots/task6/anomaly_detection_comparison.png)
+

@@ -1,0 +1,11 @@
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Utilities/misc/stm32_tiny_vsnprintf.c:84:15:strnlen_tiny	0	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Utilities/misc/stm32_tiny_vsnprintf.c:92:12:ee_skip_atoi	0	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Utilities/misc/stm32_tiny_vsnprintf.c:101:14:ee_number	120	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Utilities/misc/stm32_tiny_vsnprintf.c:197:14:eaddr	48	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Utilities/misc/stm32_tiny_vsnprintf.c:219:14:iaddr	48	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Utilities/misc/stm32_tiny_vsnprintf.c:265:6:ee_bufcpy	0	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Utilities/misc/stm32_tiny_vsnprintf.c:374:13:decimal_point	8	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Utilities/misc/stm32_tiny_vsnprintf.c:401:13:cropzeros	0	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Utilities/misc/stm32_tiny_vsnprintf.c:271:13:parse_float	128	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Utilities/misc/stm32_tiny_vsnprintf.c:417:14:flt	128	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Utilities/misc/stm32_tiny_vsnprintf.c:486:5:tiny_vsnprintf_like	56	static

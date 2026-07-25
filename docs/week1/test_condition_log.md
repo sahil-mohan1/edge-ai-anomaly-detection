@@ -20,7 +20,7 @@
 *   **Anomaly Flag:** No
 
 **Sensor Configuration/Output Screenshot:**
-![Error Code 0](../../screenshots/ec0.png)
+
 
 ### Condition 2: Sensor Fault / Drop to Zero
 *   **Data Source:** `abnormal_data.csv`
@@ -31,7 +31,7 @@
 *   **Anomaly Flag:** Yes. Sharp, sustained drop to zero indicating a potential outage or severe sensor misreading.
 
 **Sensor Configuration/Output Screenshot:**
-![Error Code 1](../../screenshots/ec1.png)
+
 
 ### Condition 3: Transition to Zero-State
 *   **Data Source:** `abnormal_data.csv`
@@ -42,7 +42,7 @@
 *   **Anomaly Flag:** Yes. This appears to be the immediate transitional error state exactly as the sensor fails to a zero-reading.
 
 **Sensor Configuration/Output Screenshot:**
-![Error Code 3](../../screenshots/ec3.png)
+
 
 ### Condition 4: Warning State with Plausible Distance
 *   **Data Source:** `abnormal_data.csv`
@@ -53,4 +53,4 @@
 *   **Anomaly Flag:** Yes, but data might be partially valid. The sensor is reporting a normal, plausible distance reading but flagging it with an error code (indicating instability or low confidence).
 
 **Sensor Configuration/Output Screenshot:**
-![Error Code 5](../../screenshots/ec5.png)
+

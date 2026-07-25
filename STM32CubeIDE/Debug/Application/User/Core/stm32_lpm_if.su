@@ -1,0 +1,6 @@
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/stm32_lpm_if.c:79:6:PWR_EnterOffMode	0	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/stm32_lpm_if.c:86:6:PWR_ExitOffMode	0	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/stm32_lpm_if.c:93:6:PWR_EnterStopMode	8	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/stm32_lpm_if.c:146:6:PWR_ExitSleepMode	8	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/stm32_lpm_if.c:111:6:PWR_ExitStopMode	8	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/stm32_lpm_if.c:130:6:PWR_EnterSleepMode	8	static

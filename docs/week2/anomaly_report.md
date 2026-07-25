@@ -1,14 +1,13 @@
 # Peak Classification and Anomaly Report (HLK-LD2413 Sensor)
 
-This report fulfills the deliverables for **Week 2 (Task 3: Identify the Nature of Unwanted Peaks)** of the Summer Internship - Anomaly Detection project. It provides visual graphs, classification of anomalous peaks, and root-cause observations.
+This report fulfills the deliverables for **Week 2 (Task 3: Identify the Nature of Unwanted Peaks)** of the Summer Internship - Anomaly Detection project. It provides classification of anomalous peaks, and root-cause observations.
 
 ---
 
-## 📊 Visual Graph of Normal and Abnormal Readings
 
 Below is the complete time-series plot of the merged dataset starting from `20-02-2026 14:49`. Normal readings (ErrorCode `0`) are plotted in green and teal, while anomalous conditions are highlighted with distinct marker shapes/colors according to their error status.
 
-![HLK-LD2413 Sensor Time Series](../../plots/water_level_anomalies.png)
+
 
 ---
 

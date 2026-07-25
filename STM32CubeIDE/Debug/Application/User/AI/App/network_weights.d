@@ -1,0 +1,10 @@
+Application/User/AI/App/network_weights.o: \
+ /home/icfoss/Downloads/waterlevel1/AI/App/network_weights.c \
+ /home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/STM32CubeIDE/Middlewares/ST/AI/Inc/ai_datatypes_defines.h \
+ /home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/STM32CubeIDE/Middlewares/ST/AI/Inc/ai_platform.h \
+ /home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/STM32CubeIDE/Middlewares/ST/AI/Inc/core_assert.h \
+ /home/icfoss/Downloads/waterlevel1/AI/App/network_weights.h
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/STM32CubeIDE/Middlewares/ST/AI/Inc/ai_datatypes_defines.h:
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/STM32CubeIDE/Middlewares/ST/AI/Inc/ai_platform.h:
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/STM32CubeIDE/Middlewares/ST/AI/Inc/core_assert.h:
+/home/icfoss/Downloads/waterlevel1/AI/App/network_weights.h:

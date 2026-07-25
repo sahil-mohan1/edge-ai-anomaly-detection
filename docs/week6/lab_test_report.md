@@ -18,19 +18,18 @@ Based on the `inject_outages.py` script, two types of anomalies were injected to
 
 ## 3. Results Comparison
 
-Below is the visual comparison showing the raw data, the data after injecting the anomalies, and the model's predictions.
 
 ### Raw Data (Baseline)
 This plot shows the expected, clean data prior to any simulated failures.
-![Raw Data](../../screenshots/raw_data.png)
+
 
 ### Data with Injected Anomalies
 This plot highlights the periods where outages were synthetically introduced based on the methodology described above. The sudden drops to 0 correspond to both the long and short simulated sensor outages.
-![Injected Anomalies](../../screenshots/injected_outage.png)
+
 
 ### Model Predictions
 This plot shows the model's performance in identifying and predicting the true values during the outage periods. 
-![Predicted Data](../../screenshots/predicted_data.png)
+
 
 ## 4. Conclusion
-The visualizations demonstrate the model's behavior during both normal operation and simulated failure conditions across the one-week test timeframe.
+The model's behavior during both normal operation and simulated failure conditions across the one-week test timeframe was verified.

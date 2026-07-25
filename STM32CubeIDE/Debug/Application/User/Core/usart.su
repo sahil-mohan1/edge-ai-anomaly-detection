@@ -1,0 +1,3 @@
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/usart.c:39:6:MX_USART1_UART_Init	8	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/usart.c:71:6:HAL_UART_MspInit	88	static
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/usart.c:138:6:HAL_UART_MspDeInit	8	static

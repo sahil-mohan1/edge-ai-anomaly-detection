@@ -40,11 +40,10 @@ Based on the evaluation, the **Hampel Filter** is selected as the primary filter
 
 Below is the graph of the selected filtering output (Hampel Filter), demonstrating how the algorithm handles the dataset, smoothing over sensor glitches and transient spikes.
 
-![Cleaned Output Graph - Hampel Filter](../../plots/task5/task5_04_hampel.png)
 
-For a comparative visualization of all the filter models evaluated:
 
-![All Filters Comparison](../../plots/task5/task5_00_summary_all_filters.png)
+
+
 
 ---
 

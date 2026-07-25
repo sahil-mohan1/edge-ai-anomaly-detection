@@ -1,0 +1,8 @@
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c:156:6:HAL_GPIO_Init	14
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c:296:6:HAL_GPIO_DeInit	8
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c:383:15:HAL_GPIO_ReadPin	2
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c:417:6:HAL_GPIO_WritePin	2
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c:440:6:HAL_GPIO_TogglePin	1
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c:465:19:HAL_GPIO_LockPin	2
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c:515:13:HAL_GPIO_EXTI_Callback	1
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c:500:6:HAL_GPIO_EXTI_IRQHandler	2

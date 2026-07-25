@@ -1,0 +1,3 @@
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/subghz.c:30:6:MX_SUBGHZ_Init	2
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/subghz.c:51:6:HAL_SUBGHZ_MspInit	1
+/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/subghz.c:68:6:HAL_SUBGHZ_MspDeInit	1

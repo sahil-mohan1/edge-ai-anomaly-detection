@@ -45,14 +45,14 @@ The project relies on a carefully selected technology stack to achieve low-power
 
 ### High-Level System Architecture
 
-The following diagram illustrates the end-to-end data flow of the project. It demonstrates how raw distance measurements from the physical sensor are acquired by the edge MCU, processed locally through a neural network, and finally packed into a minimal payload for transmission over the LoRaWAN network to the cloud dashboard.
+The end-to-end data flow involves acquiring raw distance measurements from the physical sensor by the edge MCU, processing them locally through a neural network, and finally packing them into a minimal payload for transmission over the LoRaWAN network to the cloud dashboard.
 
 **Detailed Edge Device Operations (`E5_hlk_RLS` Firmware):**
 *   **Sensor Acquisition Layer:** The `hlk_ld2413.c` driver manages the UART interface, parsing incoming byte streams from the sensor to extract the raw target distance. Concurrently, the edge node's internal ADC periodically samples the system battery voltage (`readBatteryLevel`).
 *   **AI Inference Layer:** Managed by the ST X-CUBE-AI wrapper, the `STM32CubeAI_Studio_AI_Process()` function is invoked on a set interval. It takes the raw target distance, the sensor's native error code, and historical lags as inputs, passing them through the dual-branch AR-MLP model. The model outputs an anomaly probability and an autoregressively predicted distance. Post-processing logic then determines the final distance to be logged.
 *   **LoRaWAN Payload Encoder:** Inside `lora_app.c` (specifically `SendTxData()`), the application constructs a highly compressed byte buffer. It packs the corrected 16-bit distance, the 8-bit post-processed error status, the battery voltage, and a rolling log of recent historical distances. This payload is then dispatched to the LoRa transceiver via `LmHandlerSend()` for long-range transmission.
 
-![System Architecture](images/architecture_high_level.png)
+
 
 ---
 
@@ -61,7 +61,7 @@ The following diagram illustrates the end-to-end data flow of the project. It de
 ### 1.1 HLK-LD2413 Sensor Overview & Communication
 This document summarizes the hardware specifications, communication protocol, and interface settings for the HLK-LD2413 miniaturized high-precision liquid level detection millimeter wave sensor.
 
-![HLK-LD2413 Sensor](images/hlk-ld2413.png)
+
 
 **Key Specifications (from User Manual)**
 - **Detection Range:** 0.15 m to 10 m (optimized for water surfaces and large-angle reflections).
@@ -149,7 +149,7 @@ Whenever the host sends a command, the sensor replies with an Acknowledgment (AC
 *   **Anomaly Flag:** No
 
 **Sensor Configuration/Output Screenshot:**
-![Error Code 0](images/ec0.png)
+
 
 **Condition 2: Sensor Fault / Drop to Zero**
 *   **Data Source:** `abnormal_data.csv`
@@ -159,7 +159,7 @@ Whenever the host sends a command, the sensor replies with an Acknowledgment (AC
 *   **Anomaly Flag:** Yes. Sharp, sustained drop to zero indicating a potential outage or severe sensor misreading.
 
 **Sensor Configuration/Output Screenshot:**
-![Error Code 1](images/ec1.png)
+
 
 **Condition 3: Transition to Zero-State**
 *   **Data Source:** `abnormal_data.csv`
@@ -169,7 +169,7 @@ Whenever the host sends a command, the sensor replies with an Acknowledgment (AC
 *   **Anomaly Flag:** Yes. This appears to be the immediate transitional error state exactly as the sensor fails to a zero-reading.
 
 **Sensor Configuration/Output Screenshot:**
-![Error Code 3](images/ec3.png)
+
 
 **Condition 4: Warning State with Plausible Distance**
 *   **Data Source:** `abnormal_data.csv`
@@ -179,7 +179,7 @@ Whenever the host sends a command, the sensor replies with an Acknowledgment (AC
 *   **Anomaly Flag:** Yes, but data might be partially valid. The sensor is reporting a normal, plausible distance reading but flagging it with an error code (indicating instability or low confidence).
 
 **Sensor Configuration/Output Screenshot:**
-![Error Code 5](images/ec5.png)
+
 
 ### 1.4 Initial Observation Report
 
@@ -206,10 +206,9 @@ The primary challenge for the anomaly detection logic will be differentiating be
 
 ### Peak Classification and Anomaly Report
 
-**Visual Graph of Normal and Abnormal Readings**
 Below is the complete time-series plot of the merged dataset starting from `20-02-2026 14:49`. Normal readings (ErrorCode `0`) are plotted in green and teal, while anomalous conditions are highlighted with distinct marker shapes/colors according to their error status.
 
-![HLK-LD2413 Sensor Time Series](images/water_level_anomalies.png)
+
 
 **Peak & Anomaly Classification**
 The anomalies in the dataset correspond to status bytes (`errorcode`) transmitted in the UART frame of the HLK-LD2413 sensor:
@@ -287,11 +286,10 @@ Based on the evaluation, the **Hampel Filter** is selected as the primary filter
 
 Below is the graph of the selected filtering output (Hampel Filter), demonstrating how the algorithm handles the dataset, smoothing over sensor glitches and transient spikes.
 
-![Cleaned Output Graph - Hampel Filter](images/task5_04_hampel.png)
 
-For a comparative visualization of all the filter models evaluated:
 
-![All Filters Comparison](images/task5_00_summary_all_filters.png)
+
+
 
 ### Initial Anomaly Detection Logic
 Drawing from the `anomaly_report.md` root cause analysis and the filter testing process, the initial rule-based anomaly detection logic uses two primary components:
@@ -364,14 +362,11 @@ Because anomaly classification is often firmly governed by physical boundary rul
 
 The AR-MLP achieves the lowest errors (RMSE and MAE) during prolonged simulated outages compared to the other architectures.
 
-**Visual Performance Comparison**
 
-![Anomaly Detection Comparison](images/anomaly_detection_comparison.png)
 
-### Algorithm Flowchart
-The following flowchart illustrates the data processing, inference, and autoregressive lag update logic for the AR-MLP model deployed on the STM32 edge device.
 
-![Algorithm Flowchart](images/algorithm_flowchart.png)
+
+
 
 ---
 
@@ -382,7 +377,7 @@ This report evaluates the feasibility of using the LoRa-E5 module for deploying 
 
 The hardware constraints of the STM32WLE5 series (featuring **256 KB of Flash** and **64 KB of SRAM**) were considered alongside the memory requirements of the generated `network` AI model. As seen in the ST X-CUBE-AI analysis, the anomaly detection model can be successfully loaded and executed within the available Flash and RAM footprints of the LoRa-E5 board. Based on the memory validation and firmware integration, the LoRa-E5 board is deemed fully compatible for this edge anomaly detection application.
 
-![LoRa-E5 Feasibility](images/feasibility.png)
+
 
 ### 6.2 Firmware with Anomaly Detection
 The firmware is built for the STM32WLE5 MCU (LoRa-E5) and serves two primary functions:
@@ -405,9 +400,8 @@ The binary format is tightly packed to minimize airtime and power consumption. I
 3. **Battery Voltage** (1 byte): The battery level of the edge device (divided by 10 for transmission).
 4. **Distance Logs** (Variable, up to 32 bytes): Historical distance data points to help reconstruct recent trends leading up to an anomaly.
 
-**Payload Visualizations:**
-![Payload Format 1](images/pl_format_1.png)
-![Payload Format 2](images/pl_format_2.png)
+
+
 
 **Firmware Encoder implementation (C):**
 ```c
@@ -560,13 +554,13 @@ This test evaluates the anomaly detection model's performance by comparing its p
 
 **Results Comparison:**
 *   **Raw Data (Baseline)**: Shows the expected, clean data prior to any simulated failures.
-![Raw Data](images/raw_data.png)
-*   **Data with Injected Anomalies**: Highlights the periods where outages were synthetically introduced. The sudden drops to 0 correspond to both the long and short simulated sensor outages.
-![Injected Anomalies](images/injected_outage.png)
-*   **Model Predictions**: Shows the model's performance in identifying and predicting the true values during the outage periods.
-![Predicted Data](images/predicted_data.png)
 
-The visualizations demonstrate the model's behavior during both normal operation and simulated failure conditions across the one-week test timeframe.
+*   **Data with Injected Anomalies**: Highlights the periods where outages were synthetically introduced. The sudden drops to 0 correspond to both the long and short simulated sensor outages.
+
+*   **Model Predictions**: Shows the model's performance in identifying and predicting the true values during the outage periods.
+
+
+The model's behavior during both normal operation and simulated failure conditions across the one-week test timeframe was verified.
 
 ## 7. Conclusion & Project Impact
 

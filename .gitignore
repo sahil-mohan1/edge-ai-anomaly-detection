@@ -189,3 +189,9 @@ $RECYCLE.BIN/
 secrets.yaml
 secrets.json
 config/local_settings.py
+
+*.zip
+*.png
+*.jpg
+*.jpeg
+*.gif

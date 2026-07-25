@@ -1,0 +1,5 @@
+../Application/User/Core/trace_interface.c:115:32:AdvTrace_StartRx	0	static
+../Application/User/Core/trace_interface.c:122:13:AdvTrace_HookTxCplt	8	static
+../Application/User/Core/trace_interface.c:101:32:AdvTrace_Send	16	static
+../Application/User/Core/trace_interface.c:95:32:AdvTrace_DeInit	8	static
+../Application/User/Core/trace_interface.c:88:32:AdvTrace_Init	8	static
