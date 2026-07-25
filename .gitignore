@@ -195,3 +195,4 @@ config/local_settings.py
 *.jpg
 *.jpeg
 *.gif
+*.csv
