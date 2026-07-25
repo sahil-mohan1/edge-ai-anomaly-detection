@@ -1,3 +1,0 @@
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/adc.c:30:6:MX_ADC_Init	2
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/adc.c:71:6:HAL_ADC_MspInit	2
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/adc.c:87:6:HAL_ADC_MspDeInit	2

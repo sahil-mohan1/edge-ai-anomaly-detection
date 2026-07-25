@@ -1,4 +1,0 @@
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionBaseUS.c:49:24:FindAvailable125kHzChannels	0	static
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionBaseUS.c:75:17:RegionBaseUSComputeNext125kHzJoinChannel	40	static
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionBaseUS.c:137:6:RegionBaseUSVerifyFrequencyGroup	0	static
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionBaseUS.c:148:10:RegionBaseUSCalcDownlinkFrequency	0	static

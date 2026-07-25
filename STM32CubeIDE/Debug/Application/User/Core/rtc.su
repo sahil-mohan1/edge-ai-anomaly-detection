@@ -1,3 +1,0 @@
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/rtc.c:30:6:MX_RTC_Init	56	static
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/rtc.c:84:6:HAL_RTC_MspInit	72	static
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/Core/Src/rtc.c:118:6:HAL_RTC_MspDeInit	8	static

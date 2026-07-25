@@ -1,8 +1,0 @@
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/LoRaWAN/App/lora_app.c:497:13:OnTxData	5
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/LoRaWAN/App/lora_app.c:479:13:OnTxTimerEvent	1
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/LoRaWAN/App/lora_app.c:524:13:OnJoinRequest	4
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/LoRaWAN/App/lora_app.c:552:13:OnMacProcessNotify	1
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/LoRaWAN/App/lora_app.c:296:13:OnRxData	8
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/LoRaWAN/App/lora_app.c:343:13:SendTxData	5
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/LoRaWAN/App/lora_app.c:217:6:LoRaWAN_Init	1
-/home/icfoss/STM32CubeIDE/radar_new/E5_mini_with_hlk_ld2413_v2.0/E5_hlk_RLS_log/E5_hlk_RLS/LoRaWAN/App/lora_app.c:280:6:HAL_GPIO_EXTI_Callback	1

@@ -1,5 +1,0 @@
-../Application/User/Core/trace_interface.c:115:32:AdvTrace_StartRx	1
-../Application/User/Core/trace_interface.c:122:13:AdvTrace_HookTxCplt	3
-../Application/User/Core/trace_interface.c:101:32:AdvTrace_Send	1
-../Application/User/Core/trace_interface.c:95:32:AdvTrace_DeInit	1
-../Application/User/Core/trace_interface.c:88:32:AdvTrace_Init	1
